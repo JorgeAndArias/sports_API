@@ -32,6 +32,11 @@ gem 'autoprefixer-rails', '10.2.5'
 gem 'font-awesome-sass'
 gem 'simple_form'
 
+# gems to access API
+gem 'uri'
+gem 'net-http'
+gem 'openssl'
+
 group :development, :test do
   gem 'pry-byebug'
   gem 'pry-rails'
