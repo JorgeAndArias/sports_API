@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
-  root to: 'pages#home'
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  root to: 'sports#index'
+  resources :sports, only: :index do
+    resources :countries, only: :index
+  end
 end
